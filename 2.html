@@ -1,0 +1,41 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset="UTF-8"> 
+<title></title> 
+<link rel="stylesheet" type="text/css" href="css/base.css" media="all"/> 
+<style type="text/css"> 
+
+</style>
+</head> 
+<body>
+<section class="main-content">
+<pre>
+这个是关于定位的一段JS代码，写的好差劲记录一个以后回过头来怀念一下这么差的技术=^_^=
+</pre>
+<pre>
+&lt;script type="text/javascript"&gt;
+function menuFixed(id){ 
+	var obj = document.getElementById(id); 
+	var _getHeight = obj.offsetTop; 
+	window.onscroll = function(){ 
+		changePos(id,_getHeight); 
+	} 
+} 
+function changePos(id,height){ 
+	var obj = document.getElementById(id); 
+	var scrollTop = document.documentElement.scrollTop || document.body.scrollTop; 
+	if(scrollTop < height){ 
+		obj.style.position = 'relative'; 
+	}else{ 
+		obj.style.position = 'fixed'; 
+	} 
+} 
+window.onload = function(){ 
+	menuFixed('id'); 
+} 
+&lt;/script&gt;
+</pre>
+</section>
+</body> 
+</html> 
