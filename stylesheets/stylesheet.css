@@ -59,7 +59,7 @@ a {
   /*background-color: #159957;
   //background-image: linear-gradient(120deg, #155799, #159957); */
   background-image:url(../images/banner-go.jpg);
-  background-size:contain;
+  background-size:cover;
   background-repeat:no-repeat;
   background-position:center top;
   background-attachment:scroll;
@@ -67,7 +67,7 @@ a {
 
 @media screen and (min-width: 64em) {
   .page-header {
-    padding: 6.5rem 0rem; } }
+    padding: 9.25rem 0rem; } }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .page-header {
