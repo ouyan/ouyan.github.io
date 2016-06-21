@@ -70,9 +70,9 @@
 			mark:false,
 			init:function(){
 				//1:音频上下文===html5+ajax+audioContext   html5+audio+audioContext  
-				window.AudioContext = window.AudioContext || window.webkitAudioContext || window.mozAudioContext || window.msAudioContext;
+				window.AudioContext = window.webkitAudioContext || window.AudioContext || window.mozAudioContext || window.msAudioContext;
 				/*动画执行的兼容写法*/
-				window.requestAnimationFrame = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.msRequestAnimationFrame;
+				window.requestAnimationFrame = window.webkitRequestAnimationFrame || window.requestAnimationFrame || window.mozRequestAnimationFrame || window.msRequestAnimationFrame;
 				//2:初始化音轨对象
 				var audioContext = new window.AudioContext();
 				return audioContext;
